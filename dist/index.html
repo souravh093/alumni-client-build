@@ -10,6 +10,64 @@
   </head>
   <body>
     <div id="root"></div>
-    <script src="script.js"></script>
+    <script>
+      const warningMsg = "STOP";
+      const warningMsg2 =
+        "Do not change or edit anything from this devtool. If you do, you probably could be banned from us forever!!!";
+
+      const stopArt = `
+██████████████████████████
+███████▀▀▀░░░░░░▀▀▀███████
+████▀░░░░░░░░░░░░░░░▀████
+███│░░░░░░░░░░░░░░░░░│███
+██▌│░░░░░░░░░░░░░░░░░│▐██
+██░└┐░░░░░░░░░░░░░░░┌┘░██
+██░░└┐░░░░░░░░░░░░░┌┘░░██
+██░░┌┘▄▄▄▄▄░░░░▄▄▄▄▄└┐░░██
+██▌░│██████▌░░░▐██████│░▐██
+███░│▐███▀▀░░▄░░▀▀███▌│░███
+██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██
+██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██
+████▄─┘██▌░░░░░░░▐██└─▄████
+█████░░▐█─┬┬┬┬┬┬┬─█▌░░█████
+████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████
+█████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████
+███████▄░░░░░░░░░░░▄███████
+██████████▄▄▄▄▄▄▄██████████
+`;
+
+      console.log(
+        `%c${stopArt}`,
+        "color: red; font-size: 12px; font-weight: bold;"
+      );
+      console.log(
+        `%c${warningMsg}`,
+        "color: red; font-size: 50px; font-weight: bold;"
+      );
+      console.log(
+        `%c${warningMsg2}`,
+        "color: white; font-size: 20px; font-weight: normal;"
+      );
+
+      // Function to repeatedly clear the console
+      function clearConsole() {
+        console.clear();
+        console.log(
+          `%c${stopArt}`,
+          "color: red; font-size: 12px; font-weight: bold;"
+        );
+        console.log(
+          `%c${warningMsg}`,
+          "color: red; font-size: 50px; font-weight: bold;"
+        );
+        console.log(
+          `%c${warningMsg2}`,
+          "color: white; font-size: 20px; font-weight: normal;"
+        );
+      }
+
+      // Clear the console every second
+      setInterval(clearConsole, 2000);
+    </script>
   </body>
 </html>
